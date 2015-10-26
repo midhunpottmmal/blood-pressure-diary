@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    android:id="@+id/layout1">
+
+    <ViewStub
+        android:id="@+id/vsHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inflatedId="@+id/header"
+        android:layout="@layout/header" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="6dip" >
+
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="6dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/main_btn_add"
+                style="@style/HomeButton"
+
+                android:drawable="@drawable/edit_shape"
+                android:layout_marginRight="10dp"
+                android:drawableTop="@drawable/add"
+                android:onClick="onButtonClicker" />
+
+            <Button
+                android:id="@+id/main_btn_record"
+                style="@style/HomeButton"
+                android:layout_marginLeft="10dp"
+
+
+                android:drawableTop="@drawable/list"
+                android:onClick="onButtonClicker" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/main_btn_graph"
+                style="@style/HomeButton"
+                android:drawableTop="@drawable/g1"
+                android:onClick="onButtonClicker"
+
+                android:layout_marginRight="10dp"/>
+
+
+            <Button
+                android:id="@+id/main_btn_distribution"
+                style="@style/HomeButton"
+                android:layout_marginLeft="10dp"
+                android:drawableTop="@drawable/g2"
+                android:onClick="onButtonClicker" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/main_btn_reminder"
+                style="@style/HomeButton"
+                android:layout_marginRight="10dp"
+                android:drawableTop="@drawable/list"
+                android:onClick="onButtonClicker" />
+
+
+            <Button
+                android:id="@+id/main_btn_settings"
+                style="@style/HomeButton"
+                android:layout_marginLeft="10dp"
+                android:drawableTop="@drawable/settings"
+                android:onClick="onButtonClicker"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>

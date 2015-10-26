@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="fill_parent">
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="fill_parent"
+       android:orientation="vertical">
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+
+                 <ViewStub
+                     android:id="@+id/vsHeader"
+                     android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:inflatedId="@+id/header"
+                     android:layout="@layout/header" />
+                 </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:translationZ="10dp"
+                android:layout_weight="0">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                           <Button
+                                 android:layout_width="52dp"
+                                 android:layout_height="52dp"
+                                 android:background="@drawable/profile_pic"
+                               android:id="@+id/sdsd" />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingLeft="5dp">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="midhun"
+                                    android:textColor="#000" />
+                                 <TextView
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:text="Height 161 Weight 60kg age 26"
+                                     />
+                                 <TextView
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:text="New Measure"
+                                     android:textSize="22dp"
+                                     android:textColor="#000"
+                                     android:textStyle="normal" />
+                            </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="7dp"
+
+                android:paddingBottom="5dp"
+                android:layout_weight="0">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight=".25"
+                    android:gravity="center_horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="7dp"
+                        android:text="Sys"
+                        android:paddingBottom="2dp" />
+                    <EditText
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text="120"
+                        android:gravity="center"
+                        android:textSize="35dp"
+                        android:background="@drawable/edit_shape"
+                        android:padding="5dp"
+                        android:id="@+id/new_measure_sys" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight=".25"
+                    android:gravity="center_horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="7dp"
+                        android:text="Dia"
+                        android:paddingBottom="2dp" />
+                    <EditText
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text="90"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:textSize="35dp"
+                        android:background="@drawable/edit_shape"
+                        android:id="@+id/new_measure_dia" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight=".25"
+                    android:id="@+id/f1"
+                    android:gravity="center_horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Pulse"
+                        android:textAlignment="center"
+                        android:paddingBottom="2dp" />
+                    <EditText
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:text="65"
+                        android:padding="5dp"
+                        android:gravity="center|center_horizontal"
+                        android:textSize="35dp"
+                        android:background="@drawable/edit_shape"
+                        android:id="@+id/new_measure_pulse" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="0">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:weightSum="1"
+           android:padding="3dp">
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:drawableLeft="@drawable/heart_beat"
+               android:text="Heart Beat Normal"
+               android:layout_weight="0.50"
+               android:id="@+id/new_measure_heart_beat" />
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:drawableLeft="@drawable/right_hand"
+               android:text="Hand Right"
+               android:layout_weight="0.50"
+               android:id="@+id/new_measure_hand" />
+           </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="2dp"
+        android:layout_weight="0">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Note"
+                    android:textSize="15dp"
+                    android:paddingBottom="2dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:lines="4"
+                    android:inputType="textMultiLine"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_shape"
+                    android:textStyle="bold|normal"
+                    android:id="@+id/new_measure_note"
+                    android:padding="2dp"
+                    android:focusableInTouchMode="true"
+                    android:longClickable="true" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_weight="0">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="3dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:baselineAligned="false"
+                android:layout_weight=".50">
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Date"
+
+                     android:paddingBottom="2dp" />
+                 <EditText
+                      android:layout_width="wrap_content"
+                      android:layout_height="34dp"
+                      android:inputType="numberDecimal"
+                      android:ems="10"
+                     android:paddingLeft="10dp"
+                      android:text="05-09-2015"
+                      android:background="@drawable/edit_shape"
+                     android:id="@+id/new_measure_date" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"></LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight=".50">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time"
+                    android:paddingBottom="2dp" />
+                <EditText
+                    android:paddingLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:inputType="numberDecimal"
+                    android:ems="8"
+
+                    android:text="15:23"
+                    android:background="@drawable/edit_shape"
+                    android:id="@+id/new_measure_time" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_alignParentBottom="true"
+
+            android:gravity="center_horizontal" >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+
+                android:id="@+id/new_measure_cancel"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/new_measure_save"
+                android:layout_toEndOf="@+id/new_measure_save" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:id="@+id/new_measure_save"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+       </LinearLayout>
+    </LinearLayout>
+
+    </RelativeLayout>

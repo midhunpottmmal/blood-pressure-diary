@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="epicgraph.com.mydashboard" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Dash_Board_Activity" android:label="@string/app_name"/>
+        <activity android:name=".Add_Data_Activity" android:label="@string/app_name"/>
+        <activity android:name=".Record_Activity" android:label="@string/app_name"/>
+        <activity android:name=".Settings" android:label="@string/app_name"/>
+        <activity android:name=".Graph_Activity" android:label="@string/app_name"/>
+        <activity android:name=".Remider" android:label="@string/app_name"/>
+        <activity android:name=".Distribution" android:label="@string/app_name"/>
+        <activity android:name=".NewMeasure" android:label="@string/app_name"/>
+        <receiver android:name=".AlarmNotificationReceiver" >
+        </receiver>
+
+        <receiver android:name=".AlarmLoggerReceiver" >
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+</manifest>

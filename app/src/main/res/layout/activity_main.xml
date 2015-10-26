@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/h_color"
+    >
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_xhdp"
+        android:onClick="btnHomeClick"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Blood Pressure Diary"
+        android:id="@+id/textView6"
+        android:textStyle="bold"
+        android:textColor="#ffffffff"
+        android:textSize="28dp"
+        android:layout_below="@+id/btnHome"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
